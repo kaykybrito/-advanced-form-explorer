@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário avançado</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <h1>avalie a sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img src="/images/stars.svg" alt="Balão com cinco estrelinhas dentro" />
+      </header>
+
+      <form>
+        <fieldset>
+          <h2 id="specific">Informações pessoais</h2>
+          <div class="fieldset-wrapper">
+            <div class="dual-input">
+              <div class="input-wrapper">
+                <label for="name">Name</label>
+                <input type="text" id="name" required />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="name">sobrenome</label>
+                <input type="text" id="name" required />
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="email"
+                >email<span>(digite um email válido)</span></label
+              >
+              <input type="email" id="email" required />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="input-gap">
+            <legend>Informações do mentor</legend>
+
+            <div class="input-wrapper">
+              <label for="mentorship">Selecione quem foi o seu mentor</label>
+              <select id="mentorship" required>
+                <option value="">Selecione</option>
+                <option value="">Mayk Brito</option>
+                <option value="">Kayky Brito</option>
+                <option value="">Eriky Brito</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="textarea">Feedback sobre o mentor</label>
+              <textarea id="textarea"></textarea>
+            </div>
+
+            <div class="input-checkbox">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox"
+                >Todas as minhas dúvidas foram esclarecidas durante a
+                mentoria.</label
+              >
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="input-gap">
+            <legend>Agendando próxima mentoria</legend>
+            <div class="input-flex">
+              <div class="input-wrapper">
+                <label for="date">Data<span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="date" required />
+              </div>
+
+              <div class="input-2">
+                <div class="input-wrapper">
+                  <label for="time">Das</label>
+                  <input type="time" id="time" required />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="ate">Até</label>
+                  <input type="time" id="ate" required />
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <button>salvar</button>
+      </form>
+    </div>
+  </body>
+</html>
